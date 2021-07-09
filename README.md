@@ -21,11 +21,14 @@ A) The "reversi_a5" file (non .cpp) is an executable for Linux
 B) The "reversi_a5_win.exe" is an executable for Windows
    - In console navigated to the directory in which the file is in, enter: `reversi_a5_win.exe`
    - Colour functionality returned as method for displaying colour discovered for Windows CMD
-   - As per [this guide](https://www.codeproject.com/Tips/5255355/How-to-Put-Color-on-Windows-Console):
-     - Run the command line `reg add HKEY_CURRENT_USER\Console /v VirtualTerminalLevel /t REG_DWORD /d 0x00000001 /f` in CMD
-     - Restart the console and navigate back to the directory and run the excecutable
-     - To undo the command run `reg add HKEY_CURRENT_USER\Console /v VirtualTerminalLevel /t REG_DWORD /d 0x00000000 /f`
-   - ~~The coloured display to console of the original code does not work so it currently operates without colour~~
-   - ~~Game otherwise works but is harder to see compared to its Linux counterpart~~
-   - ~~May look on how to implement the colour functionality for windows in the future~~ 
+
+- If colour does not appear and text appears as something like `\033[38;5;206m.\033[0m` do the following:
+  - As per [this guide](https://www.codeproject.com/Tips/5255355/How-to-Put-Color-on-Windows-Console):
+    - Run the command in CMD `reg add HKEY_CURRENT_USER\Console /v VirtualTerminalLevel /t REG_DWORD /d 0x00000001 /f` 
+    - This allows Windows to interpret the ESC code of `\033`
+    - Restart the console and navigate back to the directory and run the excecutable
+    - If desired, to undo, run `reg add HKEY_CURRENT_USER\Console /v VirtualTerminalLevel /t REG_DWORD /d 0x00000000 /f`
+- ~~The coloured display to console of the original code does not work so it currently operates without colour~~
+- ~~Game otherwise works but is harder to see compared to its Linux counterpart~~
+- ~~May look on how to implement the colour functionality for windows in the future~~ 
 
