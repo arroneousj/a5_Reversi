@@ -22,22 +22,13 @@ enum class Cell {
 };
 
 // foreground colours
-// const string red = "\033[0;31m";
-// const string green = "\033[1;32m";
-// const string yellow = "\033[1;33m";
-// const string pink = "\033[38;5;206m";
-// const string cyan = "\033[0;36m";
-// const string magenta = "\033[0;35m";
-// const string reset_color = "\033[0m";
-
-// for windows get rid of colours for now
-const string red = "";
-const string green = "";
-const string yellow = "";
-const string pink = "";
-const string cyan = "";
-const string magenta = "";
-const string reset_color = "";
+const string red = "\033[0;31m";
+const string green = "\033[1;32m";
+const string yellow = "\033[1;33m";
+const string pink = "\033[38;5;206m";
+const string cyan = "\033[0;36m";
+const string magenta = "\033[0;35m";
+const string reset_color = "\033[0m";
 
 // generate "pieces" with corresponding colours
 const string empty_str = pink + "." + reset_color;
