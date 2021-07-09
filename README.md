@@ -21,7 +21,7 @@ A) The "reversi_a5" file (non .cpp) is an executable for Linux
 B) The "reversi_a5_win.exe" is an executable for Windows
    - In console navigated to the directory in which the file is in, enter: `reversi_a5_win.exe`
    - Colour functionality returned as method for displaying colour discovered for Windows CMD
-   - As per [this guide](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax):
+   - As per [this guide](https://www.codeproject.com/Tips/5255355/How-to-Put-Color-on-Windows-Console#_comments):
      - Run the command line `reg add HKEY_CURRENT_USER\Console /v VirtualTerminalLevel /t REG_DWORD /d 0x00000001 /f` in CMD
      - Restart the console and navigate back to the directory and run the excecutable
      - To undo the command run `reg add HKEY_CURRENT_USER\Console /v VirtualTerminalLevel /t REG_DWORD /d 0x00000000 /f`
