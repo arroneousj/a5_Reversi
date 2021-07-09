@@ -16,11 +16,11 @@ LEGEND:
 Code was originally written to compile and run in Linux. Output to terminal was coloured for easier interpretation.
 
 A) The "reversi_a5" file (non .cpp) is an executable for Linux
- - in console navigated to the directory in which the file is in, enter: *./reversi_a5*
+ - in console navigated to the directory in which the file is in, enter: `./reversi_a5`
 
 B) The "reversi_a5_win.exe" is an executable for Windows
-- in console navigated to the directory in which the file is in, enter: *reversi_a5_win.exe*
- - The coloured display to console of the original code does not work so it currently operates without colour
- - Game otherwise works but is harder to see compared to its Linux counterpart
- - May look on how to implement the colour functionality for windows in the future
+- in console navigated to the directory in which the file is in, enter: `reversi_a5_win.exe`
+ - ~~The coloured display to console of the original code does not work so it currently operates without colour~~
+ - ~~Game otherwise works but is harder to see compared to its Linux counterpart~~
+ - ~~May look on how to implement the colour functionality for windows in the future~~ 
 
